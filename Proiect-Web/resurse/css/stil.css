@@ -1,0 +1,17 @@
+
+body{
+    --culoare1:#3BF5C6;
+    --spatiere:200px;
+    padding-left: var(--spatiere);
+    padding-left: var(--spatiere);
+}
+
+p{
+    color:red;
+    border:2px solid var(--culoare1);
+}
+
+h2{
+    background-color: var(--culoare1);
+}
+
