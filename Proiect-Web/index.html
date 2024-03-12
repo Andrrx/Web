@@ -6,8 +6,8 @@
         <title>AutoFusion</title>
         <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
-        <meta name="keywords" content="auto, automobil, AutoFusion, masini, Masina, second-hand, cel mai bun pret, BMW, Audi, Mercedes, Bucuresti"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
-        <meta name="description" content="AutoFusion ofera cel mai bun pret pentru masini SH, cu o gama larga de branduri, cu sediul in Bucuresti!"><!-- descrierea    paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <meta name="keywords" content="auto, automobil, AutoFusion, masini, Masina, second-hand, cel mai bun pret, BMW, Audi, Mercedes-Benz, Bucuresti, rate, plata in rate, dobanda, dobanda mica"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="AutoFusion ofera cel mai bun pret pentru masini noi sau SH, cu o gama larga de branduri, avand sediul in Bucuresti!"><!-- descrierea    paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
         <meta name="author" content="Tudorache Andrei-Theodor">  <!-- autorul/autoarea paginii-->
 
         <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
@@ -22,6 +22,7 @@
 
         
         <link rel="stylesheet" href="./resurse/css/stil.css" type="text/css" />
+        <link rel="stylesheet" href="./resurse/css/general.css" type="text/css" />
         <style>
             p{
                 color:green;
@@ -29,6 +30,7 @@
         </style>
 
     </head>
+
     <body>
         <header class="c1" id="h1">
             <h1>AutoFusion</h1>
@@ -37,7 +39,7 @@
                     <li>Acasa
                         <ul>
                             <li><a href="#welcome">AutoFusion</a></li>
-                            <li><a href="#tombola">Tombola</a></li>
+                            <!--<li><a href="#Deals">Deals</a></li>-->
                         </ul>
                     </li>
                     <li>Masini</li>
@@ -45,24 +47,67 @@
                 </ul>
             </nav>
         </header>
+        <input id="ch-menu" type="checkbox">
+        <nav>
+        <ul class="meniu">
+            <li><div id="acasa">Acasa</div><div id="acasa-meniu"><span class="fas fa-regular fa-house"></span></div>
+                <ul>
+                    <li><a href="#welcome">AutoFusion</a></li>
+                    <li><a href="#Deals">Deals</a></li>
+                    <li><a href="#anunturi">Anunturi</a></li>
+                    <li><a href="#produse">Oferta</a></li>
+                    <li><a href="#orar">Orar</a></li>
+                    <li><a href="#index-intrebari">Întrebări</a></li>
+                    <li><a href="#retete">Rețete</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Inregistrare</a></li>
+            <li><div>Despre</div>
+                <ul>                        
+                    <li><a href="despre.html#prezentare">Prezentare</a></li>
+                    <li><a href="despre.html#istoric">Istoric</a></li>
+                    <li><a href="despre.html#motivatie">Motivatie</a></li>
+                    <li><a href="despre.html#galerie">Galerie</a></li>
+                </ul>
+            </li>
+            <li><div>Produse</div>
+                <ul>
+                    <li><a href="http://www.google.com">Toate</a></li>
+                    <li><a href="#">Masini noi</a></li>
+                    <li><a href="#">Masin second-hand</a></li>
+                    <li><a href="#">Piese</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
         <main>
+            <div id="grid-pagina">
             <section id ="welcome">
                 <h2>Masini Bomba</h2>
                 <a target ="_blank" href="https://www.google.com ">Google</a>
-                <img src="./resurse/imagini/BMW-S3.png" alt="BMW F30 Turbat RAU" />
+                <img src="./resurse/imagini/BMW-S3.png" alt="BMW F30" />
                 <p class="intro" style="color:coral; text-decoration:underline;">Bine ai venit pe cel mai bun site auto</p>
                 
                 <figure>
-                    <picture>
-                        <source srcset="./resurse/imagini/RR-Phantom.jpg" media="(max-width:500px)"/>
-                        <source srcset="./resurse/imagini/AudiR8.jpg" media="(max-width:1000px)"/>
-                        
-                    </picture>
                     <figcaption>Masini noi</figcaption>
-                </figure>
+                    <div id="prezentare-1">
+                        <div id="prezentare"> <!-- This div was missing its closing tag -->
+                            <picture>
+                                <source srcset="./resurse/imagini/AudiR8.jpg" media="(max-width:1200px)"/>
+                                <source srcset="./resurse/imagini/MercedesCLA.jpg" media="(max-width:1000px)"/>
+                                <img src="./resurse/imagini/RR-Phantom.jpg" alt="text" title="Masini"/>
+                            </picture>
+                        </div>
+                    </div>
+                    
+                </figure> 
+                
                 <div class="taburi-iframe">
                     <a href="https://www.youtube.com/embed/Z9BjN19R8AQ?si=TxEfyxfnpp3sARIn" target="ifr-video">Prezentare F30</a>
                     <a href="https://www.youtube.com/embed/JBtvfhbzaJc?si=rYVxDkI0WmUF4qXp" target="ifr-video">Prezentare RR-Phantom</a>
+                    <a href="https://www.youtube.com/embed/GkoSo97cJn4?si=aLkMIxscFqMcRcP1" target="ifr-video">Prezentare Mercedes-Maybach S-Class</a>
+                    
      
                 </div>
                 <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/Z9BjN19R8AQ?si=TxEfyxfnpp3sARIn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -70,33 +115,129 @@
                 <details><summary>FAQ</summary>
                     <p><ul>
                         <li>
-                            Masinile sunt verificate de expertii nostrii.
+                            <details><summary>Pot avea incredere in masinile voastre?</summary>
+                            <p>Masinile sunt verificate de expertii nostrii.</p>
+                            </details>
                         </li>
                         <li>
-                            Garantie 12 luni
+                            <details><summary>Produsele au un termen de garantie?</summary>
+                            <p>Garantie este de 12 luni!</p>
+                            </details>
                         </li>
-                    </ul></p>
+                        <li><details><summary>Se poate plati in rate? Si care este dobanda?</summary>
+                            <p>Plata se poate face si in <b>RATE</b> pana la 36 de luni, cu <b>DOBANDA FIXA</b>!
+                            Pentru prima achizitie dobanda este de <s>7% </s><ins>3.47%</ins><b>!!</b></p>
+                            </details>
+                        </li>
+                        <li>
+                            <details><summary>Se pot face retururi?</summary>
+                            <p>Nu se accepta retur!</p>
+                            </details>
+                        </li>
+                    </ul>
                     </details>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, distinctio. Deleniti ea dicta ipsa odio assumenda vel cupiditate at quidem, nobis ab! Delectus, expedita odit? Nesciunt laborum voluptatem provident nobis!</p>
-                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat eum fuga necessitatibus tempora. Qui quam tempora veritatis inventore illo dolor, voluptas nostrum accusamus quo quibusdam assumenda, deleniti labore vitae.</span><span>Eos quas distinctio quos quibusdam eius doloremque pariatur consequuntur, rem itaque eum necessitatibus ut tempora, autem facilis quasi quia temporibus deleniti veritatis fugit ducimus accusamus delectus quam doloribus dolores? Possimus!</span><span>Similique quas aspernatur provident accusantium sapiente eius. Iste eos quae error dolore, molestiae beatae maiores ducimus odit perspiciatis. Quod laborum officiis earum rerum fugit reiciendis, unde quasi non debitis atque!</span></p>
+                <p>Bine ai venit pe <b>AutoFusion</b>, destinația ta de încredere pentru cele mai recente și mai captivante modele de <b>mașini</b>. Noi ne dedicăm să aducem clienților noștri cele mai bune oferte din lumea auto, punând accent pe calitate și fiabilitate. Cu o gamă variată de branduri premium și servicii personalizate, suntem alegerea ideală pentru pasionații auto din București și din întreaga țară.</p>
+                <p>Descoperă colecția noastră impresionantă de mașini noi sau <i lang="en">second-hand</i>, de la elegantele modele <b>BMW</b> și <b>Mercedes-Benz</b> până la legendarul <b>Rolls-Royce Phantom</b>. Indiferent dacă îți dorești performanță pură sau lux absolut, gama noastră diversificată de mașini noi te va încânta și inspira.</p>
             </section>
-            <section id="tombola">
-                <h2>Tombola</h2>
+            <section id="orar">
+                <table id="tab-orar">
+                    <thead>
+ 
+                        <tr>
+                            <th>Cod</th>
+                            <th>Perioadă</th>
+                            <th>Zi</th>
+                            <th>Interval dimineata</th>
+                            <th>Pauza de masa</th>
+                            <th>Interval seară</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td rowspan="5">Zile<br/>Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>10-12</td>
+                            <td>12-14</td>
+                            <td>14-20</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+ 
+                            <td>Marti</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+ 
+                            <td>Miercuri</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+ 
+                            <td>Joi</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+ 
+                            <td>Vineri</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td rowspan="2">Weekend</td>
+                            <td>Sambata</td>
+                            <td>10-12</td>
+                            <td>12-13</td>
+                            <td>13-16</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Duminica</td>
+                            <td>10-14</td>
+                            <td>-</td>
+                            <td>inchis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot><tr><td colspan="6">Închis cu ocazia sărbătorilor legale sau când ne e mai lene așa.</td></tr></tfoot>
+                </table>
+            </section>
+            <section id="Deals">
+                <h2>Deals</h2>
                 <section>
-                    <h3>Super Tombola URSAREASCA!</h3>
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem ex sed architecto deleniti illo incidunt, in cupiditate fugit vero amet quis saepe maxime, libero facilis blanditiis laboriosam tenetur vitae.</span><span>Odio eius veniam rem dolorem non? Exercitationem autem commodi temporibus repellendus aspernatur possimus sunt, laudantium corrupti corporis. Maiores, tenetur quia. Dolorum necessitatibus harum officia. Animi deleniti autem tenetur odio inventore.</span></p>
+                    <h3>Super Deals!</h3>
+                    <p>În plus față de vânzarea de mașini noi, suntem bucuroși să îți oferim oportunitatea de a participa la <i lang="en">Deals</i> <b><abbr title="AutoFusion">AF</abbr></b>, unde poți câștiga premii incredibile! Fie că ești pasionat de mașini sau că vrei să te distrezi și să ai șansa de a câștiga, Deals <b>AutoFusion</b> este pentru tine.</p>
                 </section>
             </section>
+        </div>
         </main>
         <footer>
-            <a href="#" title="Inceputul paginii" id="link-top"> Aici</a>
+            <a href="#" title="mergi sus" id="link-top"><div id="triunghi">#</div></a>
+            <a href="#" title="Inceputul paginii" id="link-top"> </a>
             <br/>
-            <a href="mailto:paronx21@gmail.com">Mail catre regele Romaniei</a>
+            <a href="mailto:patronx21@gmail.com">Mail catre regele Romaniei</a>
             <br/>
-            <a href="tel:+408162385921">Telefonul proprietarului</a>
-            <p><small>copyright:&copy;</small></p>
+            <a href="tel:+40765381666">Telefonul proprietarului</a>
+            <br/>
+            <a href="Termeni-si-conditii.pdf" download="Termeni si Conditii">Termeni & Conditii</a>
+            <address>
+                Strada Calea 13 Septembrie, nr. 250, Bucuresti, sector 5, Romania
+            </address>
+            <a target="_blank" href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355355,26.0995867,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?entry=ttu">Locatia</a>
+            <br/>
+            <a target="_blank" href="skype:irina.cican7">Skype Asistenta</a>
+            <p><small>Copyright &copy; <time datetime="2024-03-11">11 Martie 2024</time></small></p>
         </footer>
- 
     </body>
 </html>
